@@ -1,7 +1,7 @@
 package pokemon.controller;
 /**
  * This is the runner of the PokemonProject
- * @author skuo7320
+ * @author Sean Kuo
  *@version 12/12/17
  */
 public class PokemonRunner
