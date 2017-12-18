@@ -257,18 +257,18 @@ bg=magenta
       <h>120</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
-    <additional_attributes>200.0;10.0;10.0;10.0;10.0;130.0</additional_attributes>
+    <additional_attributes>10.0;130.0;10.0;10.0;200.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
       <x>552</x>
-      <y>504</y>
+      <y>528</y>
       <w>144</w>
       <h>24</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
-    <additional_attributes>160.0;10.0;10.0;10.0</additional_attributes>
+    <additional_attributes>10.0;10.0;160.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
@@ -279,40 +279,40 @@ bg=magenta
       <h>24</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
-    <additional_attributes>160.0;10.0;10.0;10.0</additional_attributes>
+    <additional_attributes>10.0;10.0;160.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
       <x>552</x>
-      <y>440</y>
+      <y>416</y>
       <w>144</w>
       <h>24</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
-    <additional_attributes>160.0;10.0;10.0;10.0</additional_attributes>
+    <additional_attributes>10.0;10.0;160.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
       <x>520</x>
       <y>560</y>
-      <w>176</w>
+      <w>168</w>
       <h>56</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
-    <additional_attributes>200.0;50.0;10.0;50.0;10.0;10.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;50.0;190.0;50.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
       <x>864</x>
-      <y>216</y>
+      <y>200</y>
       <w>144</w>
       <h>24</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
-    <additional_attributes>160.0;10.0;10.0;10.0</additional_attributes>
+    <additional_attributes>10.0;10.0;160.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
