@@ -21,4 +21,19 @@ public class Volcanion extends Pokemon implements Water, Fire
 	{
 		
 	}
+	
+	public void mansNotHot()
+	{
+		
+	}
+	
+	public void theFloorIsLava()
+	{
+		
+	}
+	
+	public void lit()
+	{
+		
+	}
 }
