@@ -22,6 +22,6 @@ public class TissueBox extends Pokemon implements Derptastic
 	
 	public void derpDerpDerp()
 	{
-		
+		System.out.print("asdasdadsadasdadada");
 	}
 }
