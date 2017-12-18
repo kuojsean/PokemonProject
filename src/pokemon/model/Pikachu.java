@@ -6,4 +6,19 @@ public class Pikachu extends Pokemon implements Electric
 	{
 		super (number, name);
 	}
+	
+	public void forkInToaster()
+	{
+		
+	}
+	
+	public void christmasTreeLights()
+	{
+		
+	}
+	
+	public void urAWizardHarry()
+	{
+		
+	}
 }
