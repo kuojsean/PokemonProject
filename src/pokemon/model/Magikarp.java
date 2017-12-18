@@ -6,4 +6,19 @@ public class Magikarp extends Pokemon implements Water
 	{
 		super (number, name);
 	}
+	
+	public void waterBottleFlip()
+	{
+		
+	}
+	
+	public void washYourHands()
+	{
+		
+	}
+	
+	public void rainDropDropTop()
+	{
+		
+	}
 }
