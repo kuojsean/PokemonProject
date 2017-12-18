@@ -6,4 +6,19 @@ public class Diglet extends Pokemon implements Ground
 	{
 		super (number, name);
 	}
+	
+	public void stepInMud()
+	{
+		
+	}
+	
+	public void carpetBurn()
+	{
+		
+	}
+	
+	public void pebbleToss()
+	{
+		
+	}
 }

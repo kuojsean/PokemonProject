@@ -286,22 +286,11 @@ TissueBox(int, String</panel_attributes>
     <coordinates>
       <x>704</x>
       <y>24</y>
-      <w>104</w>
+      <w>136</w>
       <h>64</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;.</panel_attributes>
-    <additional_attributes>110.0;60.0;10.0;10.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>912</x>
-      <y>32</y>
-      <w>24</w>
-      <h>56</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
-    <additional_attributes>10.0;50.0;10.0;10.0</additional_attributes>
+    <additional_attributes>150.0;60.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
@@ -435,16 +424,16 @@ constructors and methods
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>792</x>
+      <x>824</x>
       <y>72</y>
       <w>240</w>
       <h>64</h>
     </coordinates>
     <panel_attributes>/pokemon.model :: Electric/
 --
-+ForkInToaster() : void
-+ChristmasTree() : void
-+UrAWizardHarry() : void
++forkInToaster() : void
++christmasTreeLights() : void
++urAWizardHarry() : void
 </panel_attributes>
     <additional_attributes/>
   </element>
@@ -458,9 +447,9 @@ constructors and methods
     </coordinates>
     <panel_attributes>/pokemon.model :: Water/
 --
-+WaterBottleFlip() : void
-+WashYourHands() : void
-+RainDropDropTop() : void
++waterBottleFlip() : void
++washYourHands() : void
++rainDropDropTop() : void
 </panel_attributes>
     <additional_attributes/>
   </element>
@@ -474,9 +463,9 @@ constructors and methods
     </coordinates>
     <panel_attributes>/pokemon.model :: Ground/
 --
-+StepInMud() : void
-+CarpetBurn() : void
-+PebbleToss() : void
++stepInMud() : void
++carpetBurn() : void
++pebbleToss() : void
 </panel_attributes>
     <additional_attributes/>
   </element>
@@ -501,9 +490,9 @@ constructors and methods
     </coordinates>
     <panel_attributes>/pokemon.model :: Fire/
 --
-+MansNotHot() : void
-+TheFloorIsLava() : void
-+Lit() : void</panel_attributes>
++mansNotHot() : void
++theFloorIsLava() : void
++lit() : void</panel_attributes>
     <additional_attributes/>
   </element>
 </diagram>
