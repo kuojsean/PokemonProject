@@ -2,6 +2,7 @@ package pokemon.controller;
 
 import pokemon.model.*;
 import pokemon.view.*;
+import java.util.*;
 
 /**
  * This is the controller for the PokemonProject
@@ -11,6 +12,13 @@ import pokemon.view.*;
 public class PokemonController
 {
 
+	private List<Pokemon> pokedex;
+	
+	public List<Pokemon> getPokedex()
+	{
+		return pokedex;
+	}
+	
 	
 	public void start()
 	{
