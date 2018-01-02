@@ -19,6 +19,40 @@ public class PokemonController
 		return pokedex;
 	}
 	
+	public boolean isValidInteger(String input)
+	{
+		boolean valid = false;
+		
+		try
+		{
+			Integer.parseInt(input);
+			valid = true;
+		}
+		catch(NumberFormatException error)
+		{
+			System.out.println("Only integer values are valid.");
+		}
+		
+		return valid;
+	}
+	
+	public boolean isValidDouble(String input)
+	{
+		boolean valid = false;
+		
+		try
+		{
+			Double.parseDouble(input);
+			valid = true;
+		}
+		catch(NumberFormatException error)
+		{
+			System.out.println("Only double values are valid.");
+		}
+		
+		return valid;
+	}
+	
 	
 	public void start()
 	{
