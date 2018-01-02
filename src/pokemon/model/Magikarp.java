@@ -20,7 +20,7 @@ public class Magikarp extends Pokemon implements Water
 		setup();
 	}
 	
-	public void setup()
+	protected void setup()
 	{
 		this.setAttackPoints(10);
 		this.setCanEvolve(true);

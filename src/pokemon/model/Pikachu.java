@@ -20,7 +20,7 @@ public class Pikachu extends Pokemon implements Electric
 		setup();
 	}
 	
-	public void setup()
+	protected void setup()
 	{
 		this.setAttackPoints(55);
 		this.setCanEvolve(true);

@@ -20,7 +20,7 @@ public class Diglett extends Pokemon implements Ground
 		setup();
 	}
 	
-	public void setup()
+	protected void setup()
 	{
 		this.setAttackPoints(55);
 		this.setCanEvolve(true);

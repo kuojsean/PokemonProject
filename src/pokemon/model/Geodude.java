@@ -20,7 +20,7 @@ public class Geodude extends Pokemon implements Ground
 		setup();
 	}
 	
-	public void setup()
+	protected void setup()
 	{
 		this.setAttackPoints(80);
 		this.setCanEvolve(true);

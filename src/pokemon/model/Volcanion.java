@@ -20,7 +20,7 @@ public class Volcanion extends Pokemon implements Water, Fire
 		setup();
 	}
 	
-	public void setup()
+	protected void setup()
 	{
 		this.setAttackPoints(110);
 		this.setCanEvolve(false);

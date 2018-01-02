@@ -19,4 +19,13 @@ public class Raichu extends Pikachu
 		super (number, name);
 		setup();
 	}
+	
+	@Override
+	protected void setup()
+	{
+		super.setup();
+		this.setAttackPoints(90);
+		this.setCanEvolve(false);
+		this.setHealthPoints(60);
+	}
 }
