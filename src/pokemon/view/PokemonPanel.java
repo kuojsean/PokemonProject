@@ -23,12 +23,12 @@ public class PokemonPanel extends JPanel
 	private JLabel enhancementModifierLabel;
 	private JLabel iconLabel;
 	
-	private JTextField number;
-	private JTextField name;
-	private JCheckBox canEvolve;
-	private JTextField healthPoints;
-	private JTextField attackPoints;
-	private JTextField enhancementModifier;
+	private JTextField numberField;
+	private JTextField nameField;
+	private JCheckBox canEvolveCheckBox;
+	private JTextField healthPointsField;
+	private JTextField attackPointsField;
+	private JTextField modifierField;
 	private JTextField pokemonPicture;
 	
 	private JTextArea descriptionArea;
@@ -44,7 +44,15 @@ public class PokemonPanel extends JPanel
 	private JPanel thirdType;
 	private JPanel fourthType;
 	
-	
+	private void updatePokedexInfo(int index)
+	{
+		nameField.setText(appController.getPokedex().get(index).getName());
+		canEvolveCheckBox.setSelected(appController.getPokedex().get(index).isCanEvolve());
+		numberField.setText(appController.getPokedex.get(index).getNumber() + "");
+		attackPointsField.setText(appController.getPokedex.get(index).getAttackPoints() + "");
+		healthPointsField.setText(appController.getPokedex.get(index).getHealthPoints() + "");
+		modifierField.setText(appController.getPokedex.get(index).getEnhancementModifier() + "");
+	}
 	
 	public PokemonPanel(PokemonController appController)
 	{
@@ -60,12 +68,12 @@ public class PokemonPanel extends JPanel
 		enhancementModifierLabel = new JLabel ("Enhancement");
 		iconLabel = new JLabel();
 		
-		number = new JTextField();
-		name = new JTextField();
-		canEvolve = new JCheckBox();
-		healthPoints = new JTextField();
-		attackPoints = new JTextField();
-		enhancementModifier = new JTextField();
+		numberField = new JTextField();
+		nameField = new JTextField();
+		canEvolveCheckBox = new JCheckBox();
+		healthPointsField = new JTextField();
+		attackPointsField = new JTextField();
+		modifierField = new JTextField();
 		pokemonPicture = new JTextField();
 		
 		descriptionArea = new JTextArea();
@@ -100,12 +108,12 @@ public class PokemonPanel extends JPanel
 		this.add(enhancementModifierLabel);
 		this.add(iconLabel);
 		
-		this.add(number);
-		this.add(name);
-		this.add(canEvolve);
-		this.add(healthPoints);
-		this.add(attackPoints);
-		this.add(enhancementModifier);
+		this.add(numberField);
+		this.add(nameField);
+		this.add(canEvolveCheckBox);
+		this.add(healthPointsField);
+		this.add(attackPointsField);
+		this.add(modifierField);
 		this.add(pokemonPicture);
 		
 		this.add(descriptionArea);
