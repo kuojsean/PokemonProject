@@ -54,6 +54,12 @@ public class PokemonPanel extends JPanel
 		modifierField.setText(appController.getPokedex.get(index).getEnhancementModifier() + "");
 	}
 	
+	private void setupComboBox()
+	{
+		DefaultComboBoxModel pokemonModel = new DefaultComboBoxModel(appController.convertPokedex());
+		pokemonList.setModel(pokemonModel);
+	}
+	
 	public PokemonPanel(PokemonController appController)
 	{
 		super();
