@@ -25,18 +25,12 @@ public class PokemonController
 	
 	private void setupPokedex()
 	{
-		Pikachu pikachu = new Pikachu();
-		Raichu raichu = new Raichu();
-		Diglett diglett = new Diglett();
-		Geodude geodude = new Geodude();
-		Magikarp magikarp = new Magikarp();
-		Volcanion volcanion = new Volcanion();
-		pokedex.add(pikachu);
-		pokedex.add(raichu);
-		pokedex.add(diglett);
-		pokedex.add(geodude);
-		pokedex.add(magikarp);
-		pokedex.add(volcanion);
+		pokedex.add(new Pikachu());
+		pokedex.add(new Raichu());
+		pokedex.add(new Diglett());
+		pokedex.add(new Geodude());
+		pokedex.add(new Magikarp());
+		pokedex.add(new Volcanion());
 	}
 	
 	public List<Pokemon> getPokedex()

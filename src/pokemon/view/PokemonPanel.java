@@ -60,6 +60,58 @@ public class PokemonPanel extends JPanel
 		pokemonList.setModel(pokemonModel);
 	}
 	
+	private void updateTypePanels()
+	{
+		String [] types = appController.getPokedex().get(pokemonList.getSelectedIndex()).getPokemonTypes();
+		
+		//Change this to math your 3 minimum types in your pokedex
+		if (types[0].equals("Ground"))
+		{
+			firstType.setBackground(Color.GREEN);
+		}
+		else if (types[0].equals("Water"))
+		{
+			firstType.setBackground(Color.BLUE);
+		}
+		else if (types[0].equals("Fire"))
+		{
+			firstType.setBackground(Color.RED);
+		}
+		else if (types[0].equals("Electric"))
+		{
+			firstType.setBackground(Color.YELLOW);
+		}
+		else
+		{
+			firstType.setBackground(Color.WHITE);
+		}
+		
+		//Change the second type if they have more than one type
+		if (types.length > 1)
+		{
+			if (types[1].equals("Ground"))
+			{
+				secondType.setBackground(Color.GREEN);
+			}
+			else if (types[1].equals("Water"))
+			{
+				secondType.setBackground(Color.BLUE);
+			}
+			else if (types[1].equals("Fire"))
+			{
+				secondType.setBackground(Color.RED);
+			}
+			else if (types[1].equals("Electric"))
+			{
+				secondType.setBackground(Color.YELLOW);
+			}
+			else
+			{
+				secondType.setBackground(Color.WHITE);
+			}
+		}
+	}
+	
 	public PokemonPanel(PokemonController appController)
 	{
 		super();
@@ -85,6 +137,7 @@ public class PokemonPanel extends JPanel
 		descriptionArea = new JTextArea();
 		typeArea = new JTextArea();
 		
+		
 		load = new JButton("Load");
 		reset = new JButton("Reset");
 		save = new JButton("Save");
@@ -99,6 +152,7 @@ public class PokemonPanel extends JPanel
 		setupPanel();
 		setupLayout();
 		setupListeners();
+		setupComboBox();
 	}
 	
 	private void setupPanel()
@@ -185,7 +239,6 @@ public class PokemonPanel extends JPanel
 		baseLayout.putConstraint(SpringLayout.EAST, descriptionArea, -10, SpringLayout.EAST, this);
 		baseLayout.putConstraint(SpringLayout.NORTH, typeArea, 6, SpringLayout.SOUTH, descriptionArea);
 		baseLayout.putConstraint(SpringLayout.WEST, typeArea, 40, SpringLayout.EAST, pokemonPicture);
-		baseLayout.putConstraint(SpringLayout.SOUTH, typeArea, -154, SpringLayout.SOUTH, this);
 		baseLayout.putConstraint(SpringLayout.EAST, typeArea, -10, SpringLayout.EAST, this);
 		baseLayout.putConstraint(SpringLayout.WEST, load, 0, SpringLayout.WEST, iconLabel);
 		baseLayout.putConstraint(SpringLayout.SOUTH, load, 0, SpringLayout.SOUTH, nameLabel);
@@ -212,6 +265,7 @@ public class PokemonPanel extends JPanel
 		baseLayout.putConstraint(SpringLayout.WEST, fourthType, 0, SpringLayout.WEST, firstType);
 		baseLayout.putConstraint(SpringLayout.SOUTH, fourthType, 0, SpringLayout.SOUTH, pokemonPicture);
 		baseLayout.putConstraint(SpringLayout.EAST, fourthType, 0, SpringLayout.EAST, firstType);
+		baseLayout.putConstraint(SpringLayout.SOUTH, typeArea, 0, SpringLayout.SOUTH, pokemonPicture);
 	}
 	
 	private void setupListeners()
