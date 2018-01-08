@@ -29,7 +29,7 @@ public class PokemonPanel extends JPanel
 	private JTextField healthPointsField;
 	private JTextField attackPointsField;
 	private JTextField modifierField;
-	private JTextField pokemonPicture;
+	private JLabel pokemonPicture;
 	
 	private JTextArea descriptionArea;
 	private JTextArea typeArea;
@@ -74,7 +74,7 @@ public class PokemonPanel extends JPanel
 		healthPointsField = new JTextField();
 		attackPointsField = new JTextField();
 		modifierField = new JTextField();
-		pokemonPicture = new JTextField();
+		pokemonPicture = new JLabel("pokemon", new ImageIcon(getClass().getResource("/pokemon/view/images/logo.png")), JLabel.CENTER);
 		
 		descriptionArea = new JTextArea();
 		typeArea = new JTextArea();
