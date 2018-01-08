@@ -12,7 +12,23 @@ import java.util.*;
 public class PokemonController
 {
 
-	private List<Pokemon> pokedex;
+	private ArrayList<Pokemon> pokedex;
+	
+	private void setupPokedex()
+	{
+		Pikachu pikachu = new Pikachu();
+		Raichu raichu = new Raichu();
+		Diglett diglett = new Diglett();
+		Geodude geodude = new Geodude();
+		Magikarp magikarp = new Magikarp();
+		Volcanion volcanion = new Volcanion();
+		pokedex.add(pikachu);
+		pokedex.add(raichu);
+		pokedex.add(diglett);
+		pokedex.add(geodude);
+		pokedex.add(magikarp);
+		pokedex.add(volcanion);
+	}
 	
 	public List<Pokemon> getPokedex()
 	{
@@ -56,6 +72,6 @@ public class PokemonController
 	
 	public void start()
 	{
-		
+		setupPokedex();
 	}
 }
