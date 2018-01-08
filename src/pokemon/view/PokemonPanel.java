@@ -60,6 +60,11 @@ public class PokemonPanel extends JPanel
 		pokemonList.setModel(pokemonModel);
 	}
 	
+	private void updateImage()
+	{
+		
+	}
+	
 	private void updateTypePanels()
 	{
 		String [] types = appController.getPokedex().get(pokemonList.getSelectedIndex()).getPokemonTypes();
@@ -270,7 +275,17 @@ public class PokemonPanel extends JPanel
 	
 	private void setupListeners()
 	{
-		
+		pokemonList.addActionListener(new ActionListener()
+		{
+			public void actionPerformed(ActionEvent selection)
+			{
+				int selectedPokemonIndex = pokemonList.getSelectedIndex();
+				updatePokedexInfo(selectedPokemonIndex);
+				updateImage();
+				updateTypePanels();
+				repaint();
+			}
+		});
 	}
 	
 }
