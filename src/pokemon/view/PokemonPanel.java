@@ -48,10 +48,10 @@ public class PokemonPanel extends JPanel
 	{
 		nameField.setText(appController.getPokedex().get(index).getName());
 		canEvolveCheckBox.setSelected(appController.getPokedex().get(index).isCanEvolve());
-		numberField.setText(appController.getPokedex.get(index).getNumber() + "");
-		attackPointsField.setText(appController.getPokedex.get(index).getAttackPoints() + "");
-		healthPointsField.setText(appController.getPokedex.get(index).getHealthPoints() + "");
-		modifierField.setText(appController.getPokedex.get(index).getEnhancementModifier() + "");
+		numberField.setText(appController.getPokedex().get(index).getNumber() + "");
+		attackPointsField.setText(appController.getPokedex().get(index).getAttackPoints() + "");
+		healthPointsField.setText(appController.getPokedex().get(index).getHealthPoints() + "");
+		modifierField.setText(appController.getPokedex().get(index).getEnhancementModifier() + "");
 	}
 	
 	private void setupComboBox()
