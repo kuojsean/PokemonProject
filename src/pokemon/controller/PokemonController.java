@@ -12,7 +12,16 @@ import java.util.*;
 public class PokemonController
 {
 
-	private ArrayList<Pokemon> pokedex;
+	private List<Pokemon> pokedex;
+	private PokemonFrame appFrame;
+	
+	public PokemonController()
+	{
+		pokedex = new ArrayList<Pokemon>();
+		setupPokedex();
+		
+		appFrame = new PokemonFrame(this);
+	}
 	
 	private void setupPokedex()
 	{
@@ -69,6 +78,17 @@ public class PokemonController
 		return valid;
 	}
 	
+	public String [] convertPokedex()
+	{
+		String [] names = new String [pokedex.size()];
+		
+		for (int index = 0; index < pokedex.size(); index ++)
+		{
+			names[index] = pokedex.get(index).getName();
+		}
+		
+		return names;
+	}
 	
 	public void start()
 	{
