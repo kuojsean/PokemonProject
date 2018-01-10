@@ -73,18 +73,22 @@ public class PokemonPanel extends JPanel
 		if (types[0].equals("Ground"))
 		{
 			firstType.setBackground(Color.GREEN);
+			secondType.setBackground(Color.WHITE);
 		}
 		else if (types[0].equals("Water"))
 		{
 			firstType.setBackground(Color.BLUE);
+			secondType.setBackground(Color.WHITE);
 		}
 		else if (types[0].equals("Fire"))
 		{
 			firstType.setBackground(Color.RED);
+			secondType.setBackground(Color.WHITE);
 		}
 		else if (types[0].equals("Electric"))
 		{
 			firstType.setBackground(Color.YELLOW);
+			secondType.setBackground(Color.WHITE);
 		}
 		else
 		{
@@ -162,7 +166,7 @@ public class PokemonPanel extends JPanel
 	
 	private void setupPanel()
 	{
-		this.setBackground(Color.RED);
+		this.setBackground(Color.GRAY);
 		this.setLayout(baseLayout);
 		
 		this.add(numberLabel);
