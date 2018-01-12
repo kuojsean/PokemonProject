@@ -52,6 +52,14 @@ public class PokemonPanel extends JPanel
 		attackPointsField.setText(appController.getPokedex().get(index).getAttackPoints() + "");
 		healthPointsField.setText(appController.getPokedex().get(index).getHealthPoints() + "");
 		modifierField.setText(appController.getPokedex().get(index).getEnhancementModifier() + "");
+		
+		descriptionArea.setText(appController.getPokedex().get(index).toString());
+		typeArea.setText("");
+		
+		for (String current : appController.getPokedex().get(index).getPokemonTypes())
+		{
+			typeArea.append(current + "\n");
+		}
 	}
 	
 	private void setupComboBox()
