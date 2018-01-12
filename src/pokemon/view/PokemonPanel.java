@@ -169,7 +169,6 @@ public class PokemonPanel extends JPanel
 		descriptionArea = new JTextArea();
 		typeArea = new JTextArea();
 		
-		
 		load = new JButton("Load");
 		reset = new JButton("Reset");
 		save = new JButton("Save");
