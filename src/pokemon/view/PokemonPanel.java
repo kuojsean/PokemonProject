@@ -70,7 +70,22 @@ public class PokemonPanel extends JPanel
 	
 	private void updateImage()
 	{
+		String path = "/pokemon/view/images/";
+		String defaultName = "logo";
+		String name = pokemonList.getSelectedItem().toString();
+		String extension = ".png";
+		ImageIcon pokemonIcon;
 		
+		try
+		{
+			pokemonIcon = new ImageIcon(getClass().getResource(path + name + extension));
+		}
+		catch(NullPointerException missingImageFile)
+		{
+			pokemonIcon = new ImageIcon(getClass().getResource(path + defaultName + extension));
+		}
+		
+		pokemonPicture.setIcon(pokemonIcon);
 	}
 	
 	private void updateTypePanels()
