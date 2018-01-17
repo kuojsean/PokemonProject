@@ -1,12 +1,6 @@
 Pikachu,25,25,55,0.5,true
 Raichu,26,60,90,0.5,false
-Diglett,50,10,55,0.5,true
-Geodude,74,40,80,0.5,true
-Magikarp,129,20,10,0.5,true
-Volcanion,721,80,110,0.5,false
-Pikachu,25,25,55,0.5,true
-Raichu,26,60,90,0.5,false
-Diglett,50,10,55,0.5,true
+Dasd,50,10,55,0.5,true
 Geodude,74,40,80,0.5,true
 Magikarp,129,20,10,0.5,true
 Volcanion,721,80,110,0.5,false
